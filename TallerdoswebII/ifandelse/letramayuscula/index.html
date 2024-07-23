@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Mayúsculas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+            width: 200px;
+        }
+        button {
+            display: block;
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Mayúsculas</h1>
+    <form id="wordForm">
+        <label for="word">Palabra:</label>
+        <input type="text" id="word" required>
+        <br>
+        <button type="button" onclick="checkCapital()">Verificar</button>
+    </form>
+    <p id="result"></p>
+    <script src="checkCapital.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negación de Expresiones Lógicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        button {
+            display: block;
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Negación de Expresiones Lógicas</h1>
+    <form id="logicForm">
+        <label for="a">a:</label>
+        <input type="checkbox" id="a" onclick="updateValues()">
+        <br>
+        <label for="b">b:</label>
+        <input type="checkbox" id="b" onclick="updateValues()">
+    </form>
+    <div id="results">
+        <p id="expr1">!a && !b: </p>
+        <p id="expr2">!a || !b: </p>
+        <p id="negExpr1">Negación de !a && !b: </p>
+        <p id="negExpr2">Negación de !a || !b: </p>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
